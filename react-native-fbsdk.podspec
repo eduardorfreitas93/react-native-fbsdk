@@ -12,19 +12,4 @@ Pod::Spec.new do |s|
   s.source        = { :git => 'https://github.com/facebook/react-native-fbsdk.git' }
   s.platform      = :ios, '7.0'
   s.dependency      'React'
-
-  s.subspec 'Core' do |ss|
-    ss.dependency     'FBSDKCoreKit'
-    ss.source_files = 'ios/RCTFBSDK/core/*.{h,m}'
-  end
-
-  s.subspec 'Login' do |ss|
-    ss.dependency     'FBSDKLoginKit'
-    ss.source_files = 'ios/RCTFBSDK/login/*.{h,m}'
-  end
-
-  s.subspec 'Share' do |ss|
-    ss.dependency     'FBSDKShareKit'
-    ss.source_files = 'ios/RCTFBSDK/share/*.{h,m}'
-  end
 end
